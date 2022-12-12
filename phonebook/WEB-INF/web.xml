@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5"> 
+
+<servlet>
+    <servlet-name>Main</servlet-name>
+    <servlet-class>MainPage</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Family</servlet-name>
+    <servlet-class>Family</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Friends</servlet-name>
+    <servlet-class>Friends</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Work</servlet-name>
+    <servlet-class>Work</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>All</servlet-name>
+    <servlet-class>All</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Person</servlet-name>
+    <servlet-class>AddPerson</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Number</servlet-name>
+    <servlet-class>AddNumber</servlet-class>
+</servlet>
+
+<servlet>
+    <servlet-name>Group</servlet-name>
+    <servlet-class>AddGroup</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Main</servlet-name>
+    	<url-pattern>/main</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>Main</servlet-name>
+    	<url-pattern>/main/addPerson</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>Main</servlet-name>
+    	<url-pattern>/main/addNumber</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Main</servlet-name>
+        <url-pattern>/main/addGroup</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+	<servlet-name>Person</servlet-name>
+    	<url-pattern>/create</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>Number</servlet-name>
+    	<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Family</servlet-name>
+        <url-pattern>/family</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Friends</servlet-name>
+        <url-pattern>/friends</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>Work</servlet-name>
+        <url-pattern>/work</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+        <servlet-name>All</servlet-name>
+        <url-pattern>/all</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+        <servlet-name>Group</servlet-name>
+        <url-pattern>/addgroup</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
